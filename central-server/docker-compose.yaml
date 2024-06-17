@@ -9,7 +9,8 @@ volumes:
 
 networks:
   monitoring:
-    external: true
+    name: monitoring
+    driver: bridge
 
 services:
   prometheus:
